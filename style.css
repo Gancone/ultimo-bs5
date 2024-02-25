@@ -4,10 +4,15 @@
     --third-color: rgb(126, 140, 82);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     position: relative;
 }
-
 .top-page{
     width: 50px;
     height: 50px;
@@ -78,6 +83,7 @@ button.headerButton:hover{
 
 .contact {
     background-color: var(--main-color);
+    overflow-x: hidden;
 }
 
 
@@ -86,7 +92,7 @@ button.headerButton:hover{
 }
 
 .mine-border {
-    border: 6px solid var(--main-color);
+    border: 3px solid var(--main-color);
 }
 
 .mine-shadow-card {
@@ -100,6 +106,9 @@ button.headerButton:hover{
 
 .mine-card:hover{
     box-shadow: 0px 0px 25px 5px black;
+    background-color: var(--main-color);
+    color: white;
+    transition: 0.3s;
 }
 
 
