@@ -27,7 +27,7 @@
 <body>
 
     <!-- NAVBAR  -->
-    <nav id="navbarTop" class="navbar navbar-expand-md navbar-dark bg-dark w-75 d-md-block mx-auto" aria-label="Fourth navbar example">
+    <nav id="navbarTop" class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="logo-main" src="./assets/logo-main.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
@@ -75,7 +75,7 @@
                                 </div>
                             </div>
                             <button type="button"
-                                class="border-0 main-color py-2 mb-4 text-white w-25 d-block mx-auto">Save
+                                class="border-0 py-2 mb-4 text-white w-25 d-block mx-auto main-color rounded-2">Save
                                 changes</button>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
     <!-- IMG HEADER -->
     <header class="masthead" data-aos="fade-up">
         <div class="container h-100 img-fluid">
-            <div class="row h-100 align-items-center">
+            <div class="row h-100 align-items-center w-100">
                 <div class="col-12 text-center">
                     <h1 class="text-uppercase text-black mio-font">Scopri il mondo</h1>
                     <button class="py-3 px-5 border-0 mt-5 text-white rounded-3 main-color headerButton">Contattaci
@@ -98,7 +98,7 @@
     </header>
 
     <!-- US -->
-    <section class="container" data-aos="fade-up" data-aos-duration="1000">
+    <section id="us" class="container" data-aos="fade-up" data-aos-duration="1000">
         <div class="row text-center">
             <div class="col-12">
                 <h1 class="mt-4">Viaggia in lungo e in largo con noi</h1>
@@ -126,7 +126,7 @@
 
 
     <!-- ALTERNATE IMAGES -->
-    <section class="container">
+    <section id="alternate-images" class="container">
         <div class="row">
             <figure class="col-12 col-md-6 " data-aos="fade-right" data-aos-duration="1000">
                 <img class="img-fluid" src="./assets/1.png" alt="">
@@ -140,7 +140,7 @@
                     perspiciatis!</p>
                 <button class="border-0 main-color text-white px-4 py-2">Scopri luoghi</button>
             </div>
-            <figure class="col-12 col-md-6 order-md-last" data-aos="fade-left" data-aos-duration="1000">
+            <figure class="col-12 col-md-6" data-aos="fade-left" data-aos-duration="1000">
                 <img class="img-fluid" src="./assets/2.png" alt="">
             </figure>
             <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center"
@@ -158,12 +158,12 @@
 
 
     <!--  CARD  -->
-    <section class="container text-center d-block mx-auto">
+    <section id="cards" class="container text-center d-block mx-auto">
         <div class="row">
             <h1 class="mb-5">I NOSTRI SERVIZI</h1>
-            <div class="col-12 col-md-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            <div class="col-12 col-lg-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
                 data-aos-duration="800">
-                <figure class="mx-2 d-block mx-auto main-color p-2 mine-shadow-card rounded-2" style="width: 18rem;">
+                <figure class="d-block mx-auto main-color p-2 mine-shadow-card rounded-2" style="width: 18rem;">
                     <img src="./assets/travel1.png" class="card-img-top" alt="...">
                     <div class="card-body main-color text-white">
                         <h2>viaggi in tutto il mondo</h2>
@@ -172,7 +172,7 @@
                     </div>
                 </figure>
             </div>
-            <div class="col-12 col-md-4 mt-3 mt-md-0" data-aos="fade-right" data-aos-offset="300"
+            <div class="col-12 col-lg-4 mt-3 mt-md-0" data-aos="fade-right" data-aos-offset="300"
                 data-aos-easing="ease-in-sine" data-aos-duration="1200">
                 <figure class="d-block mx-auto main-color p-2 mine-shadow-card rounded-2" style="width: 18rem;">
                     <img src="./assets/travel.png" class="card-img-top" alt="...">
@@ -183,7 +183,7 @@
                     </div>
                 </figure>
             </div>
-            <div class="col-12 col-md-4 mt-3 mt-md-0" data-aos="fade-right" data-aos-offset="300"
+            <div class="col-12 col-lg-4 mt-3 mt-md-0" data-aos="fade-right" data-aos-offset="300"
                 data-aos-easing="ease-in-sine" data-aos-duration="1600">
                 <figure class="d-block mx-auto main-color p-2 mine-shadow-card rounded-2" style="width: 18rem;">
                     <img src="./assets/6.png" class="card-img-top" alt="...">
@@ -198,10 +198,11 @@
     </section>
 
     <!-- Location  -->
-    <section class="container text-center mt-5">
+    <section id="location" class="container text-center mt-5">
         <div class="row">
             <h1 class="col-12 mb-4 ">Le nostre mete</h1>
-            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="300" >
                 <div class="mine-card mine-border rounded-3 mt-4 p-2" style="width: 18rem;">
                     <img src="./assets/img2.jpg" class="card-img-top rounded-3" alt="./assets/img2.jpg">
                     <div class="card-body">
@@ -209,7 +210,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="350">
                 <div class="mine-card mine-border rounded-3 mt-4 p-2" style="width: 18rem;">
                     <img src="./assets/img2.jpg" class="card-img-top rounded-3" alt="./assets/img2.jpg">
                     <div class="card-body">
@@ -217,7 +219,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="400">
                 <div class="mine-card mine-border rounded-3 mt-4 p-2" style="width: 18rem;">
                     <img src="./assets/img2.jpg" class="card-img-top rounded-3" alt="./assets/img2.jpg">
                     <div class="card-body">
@@ -225,7 +228,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="450">
                 <div class="mine-card mine-border rounded-3 mt-4 p-2" style="width: 18rem;">
                     <img src="./assets/img2.jpg" class="card-img-top rounded-3" alt="./assets/img2.jpg">
                     <div class="card-body">
@@ -233,7 +237,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="500">
                 <div class="mine-card mine-border rounded-3 mt-4 p-2" style="width: 18rem;">
                     <img src="./assets/img2.jpg" class="card-img-top rounded-3" alt="./assets/img2.jpg">
                     <div class="card-body">
@@ -241,7 +246,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="550">
                 <div class="mine-card mine-border rounded-3 mt-4 p-2" style="width: 18rem;">
                     <img src="./assets/img2.jpg" class="card-img-top rounded-3" alt="./assets/img2.jpg">
                     <div class="card-body">
@@ -249,7 +255,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="600">
                 <div class="mine-card mine-border rounded-3 mt-4 p-2" style="width: 18rem;">
                     <img src="./assets/img2.jpg" class="card-img-top rounded-3" alt="./assets/img2.jpg">
                     <div class="card-body">
@@ -257,7 +264,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="650">
                 <div class="mine-card mine-border rounded-3 mt-4 p-2" style="width: 18rem;">
                     <img src="./assets/img2.jpg" class="card-img-top rounded-3" alt="./assets/img2.jpg">
                     <div class="card-body">
@@ -265,7 +273,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="700">
                 <div class="mine-card mine-border rounded-3 mt-4 p-2" style="width: 18rem;">
                     <img src="./assets/img2.jpg" class="card-img-top rounded-3" alt="./assets/img2.jpg">
                     <div class="card-body">
@@ -273,7 +282,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="750">
                 <div class="mine-card mine-border rounded-3 mt-4 p-2" style="width: 18rem;">
                     <img src="./assets/img2.jpg" class="card-img-top rounded-3" alt="./assets/img2.jpg">
                     <div class="card-body">
@@ -281,7 +291,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="800">
                 <div class="mine-card mine-border rounded-3 mt-4 p-2" style="width: 18rem;">
                     <img src="./assets/img2.jpg" class="card-img-top rounded-3" alt="./assets/img2.jpg">
                     <div class="card-body">
@@ -289,7 +300,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="850">
                 <div class="mine-card mine-border rounded-3 mt-4 p-2" style="width: 18rem;">
                     <img src="./assets/img2.jpg" class="card-img-top rounded-3" alt="./assets/img2.jpg">
                     <div class="card-body">
@@ -302,7 +314,7 @@
     </section>
 
     <!-- FORM CONTATTACI -->
-    <section class="container mt-5 p-5 rounded-3 contact" data-aos="zoom-in" data-aos-duration="1500">
+    <section id="formm" class="container mt-5 p-5 rounded-3 contact" data-aos="zoom-in" data-aos-duration="1500">
         <div class="row">
             <div class="col-12">
                 <form action="">
