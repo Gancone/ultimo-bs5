@@ -89,7 +89,37 @@ button.headerButton:hover{
     overflow-x: hidden;
 }
 
+.modal-content button {
+    position: relative;
+    border: 3px solid var(--main-color);
+    color: black;
+    z-index: 2;
+}
 
+.modal-content > button::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: var(--main-color);
+    opacity: 1;
+    border-radius: 2px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+.modal-content button:hover {
+    color: white;
+    transition: 0.4s;
+}
+
+
+.modal-content > button:hover::before{
+    right: 0;
+    width: 100%;
+}
 .contact:hover {
     box-shadow: 0px 0px 25px 5px black;
 }
@@ -147,10 +177,11 @@ input[type='text']:focus{
     box-shadow: 0px 0px 25px 5px black;
 }
 
-input[type='text']:focus{
+input[type='password']:focus{
     border: none;
     box-shadow: 0px 0px 25px 5px black;
 }
+
 
 #exampleFormControlTextarea1:focus{
     border: none;
